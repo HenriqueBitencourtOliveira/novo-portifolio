@@ -10,6 +10,10 @@
     --color-background: #010101;
     --color-white: #fff;
     --color-green: #0cfa149f;
+    --color-html:#eb4034;
+    --color-css:#4287f5;
+    --color-javascript:#eafa00;
+    --color-typescript:#1b6ff7;
 }
 
 body{
@@ -100,6 +104,7 @@ a{
     opacity: .1;
     width: 90vh;
     filter: drop-shadow(10px 0px 18px  var(--color-green));
+    
 }
 
 .section__text-inline > p{
@@ -175,34 +180,59 @@ h2.section__title-pulsating{
 
 .softskills{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 6rem;
+    padding-top: 7rem;
 }
 
+
+
 .softskills__img{
+    height: 170px;
+    width: 160px;
     transition: 0.8s;
     fill: #ffffff;
+    
 }
+
+#teste__title{
+    color: rgb(255, 255, 255);
+    padding-top: 1rem;
+    opacity: 0;
+    font-size: 1.8rem;
+    transition: 0.8s;
+    
+}
+
+#teste__time{
+    color: rgb(255, 255, 255);
+    
+    font-size: 1.2rem;
+    transition: 0.8s;
+    opacity: 0;
+}
+
+
 
 
 #javascript__img:hover{
-    fill: #eafa00;
+    fill: var(--color-javascript);
     scale: 0.95;
+    
 }
 
 #html__img:hover{
-    fill: #eb4034;
+    fill: var(--color-html);
     scale: 0.95;
 }
 
 #css__img:hover{
-    fill:#4287f5;
+    fill: var(--color-css);
     scale: 0.95;
 }
 
 #typescript__img:hover{
-    fill:#1b6ff7;
+    fill: var(--color-typescript);
     scale:0.95;
 }
 footer{
@@ -223,34 +253,36 @@ img.footer__img{
     flex-wrap: wrap;
     justify-content: center;
     gap: 6rem;
-    
+    transition: 0.8s;
 }
-.footer__img-git a {
+.footer__img-git a svg{
     fill: #fff;
     
-    
-}
-
-.footer__img-linkedin a{
-    fill: #fff;
-}
-
-
-.footer__img-cv a{
-    fill: #fff;
-}
-
-.footer__img-git :hover{
-    scale: 0.95;
     transition: 0.8s;
 }
 
-.footer__img-linkedin :hover{
-    scale: 0.95;
+.footer__img-linkedin a svg{
+    fill: #fff;
     transition: 0.8s;
 }
-.footer__img-cv :hover{
-    scale: 0.95;
+
+
+.footer__img-cv a svg{
+    fill: #fff;
     transition: 0.8s;
+}
+
+.footer__img-git a svg:hover{
+    scale: 0.9;
+    
+}
+
+.footer__img-linkedin a svg:hover{
+    scale: 0.9;
+    
+}
+.footer__img-cv a svg:hover{
+    scale: 0.9;
+   
 }
 
