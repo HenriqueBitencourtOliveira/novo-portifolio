@@ -13,16 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     function showHoveredContent(element) {
-        const titleHardSkills = element.querySelector('#teste__title')
-        const timeHardSkills = element.querySelector('#teste__time')
-
-
-        const htmlcolor = element.querySelector('#html__img #teste__title')
-        const csscolor = element.querySelector('#css__img #teste__title')
-        const javascriptcolor = element.querySelector('#javascript__img #teste__title')
-        const typescriptcolor = element.querySelector('#typescript__img #teste__title')
-
-
+        const titleHardSkills = element.querySelector('#skill__title')
+        const timeHardSkills = element.querySelector('#skill__time')
+    
+    
+        const htmlcolor = element.querySelector('#html__img #skill__title')
+        const csscolor = element.querySelector('#css__img #skill__title')
+        const javascriptcolor = element.querySelector('#javascript__img #skill__title')
+        const typescriptcolor = element.querySelector('#typescript__img #skill__title')
+    
+    
         if (timeHardSkills&&titleHardSkills) {
             titleHardSkills.style.opacity = '1';
             timeHardSkills.style.opacity = '1';
@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
             titleHardSkills.style.filter = 'drop-shadow(0px 2px 18px #1b6ff7)'
             timeHardSkills.style.filter = 'drop-shadow(0px 2px 18px #1b6ff7)'
         } 
-
+    
     }
 
     function hideHoveredContent(element) {
-        const titleHardSkills = element.querySelector('#teste__title')
-        const timeHardSkills = element.querySelector('#teste__time')
+        const titleHardSkills = element.querySelector('#skill__title')
+        const timeHardSkills = element.querySelector('#skill__time')
 
         if (titleHardSkills && timeHardSkills) {
             titleHardSkills.style.opacity = '0'
@@ -54,3 +54,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 })
+
