@@ -323,7 +323,7 @@ img.footer__img {
 
     .hero__title span::before {
 
-        content: none;
+        height: 30px;
     }
 
     .section-my {
