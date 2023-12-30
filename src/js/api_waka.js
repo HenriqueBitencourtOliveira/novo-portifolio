@@ -1,6 +1,6 @@
-const leguagens = [];
+export const leguagens = [];
 const waka_url = 'https://wakatime.com/share/@HenriqueBitencourt/9d54586a-32f1-4e1b-8a37-1c44e5845c24.json';
-async function fetchLeguagens() {
+export async function fetchLeguagens() {
     const response = await fetch(waka_url);
     const leguagen = await response.json();
     leguagens.push(leguagen);
@@ -20,4 +20,4 @@ async function fetchLeguagens() {
     }
 }
 
-fetchLeguagens();
+

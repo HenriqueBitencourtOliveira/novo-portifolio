@@ -1,3 +1,7 @@
+import showHoveredContent from "./show_hovered_content.js"
+import hideHoveredContent from "./hide_hovered_content.js"
+import { leguagens, fetchLeguagens } from "./api_waka.js"
+import effect_title from "./effect_title.js"
 
 document.addEventListener('DOMContentLoaded', function() {
     const hoverableElements = document.querySelectorAll('.hoverable')
@@ -12,46 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     })
 
-    function showHoveredContent(element) {
-        const titleHardSkills = element.querySelector('#skill__title')
-        const timeHardSkills = element.querySelector('#skill__time')
-    
-    
-        const htmlcolor = element.querySelector('#html__img #skill__title')
-        const csscolor = element.querySelector('#css__img #skill__title')
-        const javascriptcolor = element.querySelector('#javascript__img #skill__title')
-        const typescriptcolor = element.querySelector('#typescript__img #skill__title')
-    
-    
-        if (timeHardSkills&&titleHardSkills) {
-            titleHardSkills.style.opacity = '1';
-            timeHardSkills.style.opacity = '1';
-        } if (htmlcolor) {
-            titleHardSkills.style.filter = 'drop-shadow(0px 2px 18px #eb4034)'
-            timeHardSkills.style.filter = 'drop-shadow(0px 2px 18px #eb4034)'
-        } if (csscolor) {
-            titleHardSkills.style.filter = 'drop-shadow(0px 2px 18px #2d7aff)'
-            timeHardSkills.style.filter = 'drop-shadow(0px 2px 18px #2d7aff)'
-        } if (javascriptcolor) {
-            titleHardSkills.style.filter = 'drop-shadow(0px 2px 18px #eafa00)'
-            timeHardSkills.style.filter = 'drop-shadow(0px 2px 18px #eafa00)'
-        }if (typescriptcolor) {
-            titleHardSkills.style.filter = 'drop-shadow(0px 2px 18px #1b6ff7)'
-            timeHardSkills.style.filter = 'drop-shadow(0px 2px 18px #1b6ff7)'
-        } 
-    
-    }
-
-    function hideHoveredContent(element) {
-        const titleHardSkills = element.querySelector('#skill__title')
-        const timeHardSkills = element.querySelector('#skill__time')
-
-        if (titleHardSkills && timeHardSkills) {
-            titleHardSkills.style.opacity = '0'
-            timeHardSkills.style.opacity = '0'
-            titleHardSkills.style.filter = 'none'
-            
-        }
-    }
 })
 
+fetchLeguagens();
+
+document.addEventListener('DOMContentLoaded', effect_title)
